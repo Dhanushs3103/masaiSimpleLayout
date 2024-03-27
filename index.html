@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai simple layout</title>
+    <style>
+        #root{
+            display: flex;
+            flex-direction: column;
+        }
+        #logo{
+            width: 200px;
+            margin-top: 10px;
+        }
+        #poster{
+            width: 700px;
+            height: 400px;
+            margin-top: 20px;
+        }
+        #table {
+            margin-left: 5px;
+            width: 250px;
+        }
+        
+        h3{
+            margin: 30px 0;
+        }
+
+        h2{
+            margin: 0;
+            margin-top: 20px;
+        }
+        label {
+        margin-top: 20px;
+        }
+        input{
+            margin-left: 30px;
+        }
+        #phoneNo {
+            margin-left: 5px;
+        }
+        #email {
+            margin-left: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+       <!-- logo -->
+       <img id="logo" src="https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/masai_logo.svg" alt="masai_logo">
+       <!-- poster -->
+       <img id="poster" src="https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/masai_banner.jpg" alt="poster">
+       <!-- Agenda -->
+       <h3>We will be learning the following things this week:</h3>
+       <!-- table -->
+       <table id="table">
+          <thead>
+            <tr>
+                <th>Day 1</th>
+                <th>Day 2</th>
+                <th>Day 3</th>
+                <th>Day 4</th>
+            </tr>
+          </thead>
+        <tbody>
+            <tr>
+                <td>Linux 1</td>
+                <td>HTML</td>
+                <td>Linux 2</td>
+                <td>Linux 3</td>
+            </tr>
+            <tr>
+             <td>Git 1</td>
+             <td>CSS</td>
+             <td>Git 2</td>
+             <td>Bootstrap</td>
+            </tr>
+        </tbody>
+       </table>
+       <!-- input elements -->
+       <label for="name" >
+        Name:
+        <input type="text" id="name">
+       </label>
+       <label for="phoneNo">
+        Phone No:
+        <input type="number" id="phoneNo">
+       </label>
+       <label for="email">
+        Email Id:
+        <input type="email" id="email">
+       </label>
+       <!-- points -->
+       <h2>The following things are important to be a programmer:</h2>
+       <ul>
+        <li>Problem solving mindset</li>
+        <li>Consistency</li>
+        <ul>
+            <li>Clean code</li>
+            <li>Through Knowledge of core concepts</li>
+            <li>Readable code</li>
+        </ul>
+        <li>Speed</li>
+       </ul>
+    </div>
+</body>
+</html>
